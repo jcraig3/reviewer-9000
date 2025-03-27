@@ -21,8 +21,7 @@ export default function AdminPage() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    // Example of how to update state from loader data in Remix
-    fetchReviews("123").then(setReviews); // Replace '123' with actual product ID
+    fetchReviews("123").then(setReviews);
   }, []);
 
   const rows = reviews.map((review: any) => [
