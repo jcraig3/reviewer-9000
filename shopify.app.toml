@@ -1,10 +1,10 @@
-# Whenever a `shopify.app.toml` is generated after you've run `pnpm dev` make sure you update the generated config with the below, of course replace any values in `[]` brackets with the values that are within the actual `shopify.app.toml` file.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "[client_id]"
-application_url = "https://example.com"
+client_id = "77ff0768608cd79d33508eb7b2f1d572"
+application_url = "https://recorded-becoming-clicking-toner.trycloudflare.com"
 embedded = true
-name = "[name]"
-handle = "[handle]"
+name = "reviewer-9000"
+handle = "reviewer-9007"
 
 [webhooks]
 api_version = "2025-01"
@@ -23,19 +23,19 @@ scopes = "read_customer_events,read_customers,read_metaobject_definitions,read_m
 
 [auth]
 redirect_urls = [
-  "https://example.com/auth/callback",
-  "https://example.com/auth/shopify/callback",
-  "https://example.com/api/auth/callback"
+  "https://recorded-becoming-clicking-toner.trycloudflare.com/auth/callback",
+  "https://recorded-becoming-clicking-toner.trycloudflare.com/auth/shopify/callback",
+  "https://recorded-becoming-clicking-toner.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
 embedded = false
 
 [app_proxy]
-url = "https://example.com/api/public"
+url = "https://recorded-becoming-clicking-toner.trycloudflare.com/api/public"
 subpath = "reviewer-9000"
 prefix = "apps"
 
 [build]
-dev_store_url = "[dev_store_url]"
+include_config_on_deploy = true
 automatically_update_urls_on_dev = true
